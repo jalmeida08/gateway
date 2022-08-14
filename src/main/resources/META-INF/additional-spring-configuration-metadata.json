@@ -1,0 +1,42 @@
+{"properties": [
+  {
+    "name": "app.oauth.url",
+    "type": "java.lang.String",
+    "description": "A description for 'app.oauth.url'"
+  },
+  {
+    "name": "app.usuario.url",
+    "type": "java.lang.String",
+    "description": "A description for 'app.usuario.url'"
+  },
+  {
+    "name": "app.oauth.port",
+    "type": "java.lang.String",
+    "description": "A description for 'app.oauth.port'"
+  },
+  {
+    "name": "app.usuario.port",
+    "type": "java.lang.String",
+    "description": "A description for 'app.usuario.port'"
+  },
+  {
+    "name": "app.cadastroBasico.url",
+    "type": "java.lang.String",
+    "description": "A description for 'app.cadastroBasico.url'"
+  },
+  {
+    "name": "app.studio.url",
+    "type": "java.lang.String",
+    "description": "A description for 'app.studio.url'"
+  },
+  {
+    "name": "app.studio.port",
+    "type": "java.lang.String",
+    "description": "A description for 'app.studio.port'"
+  },
+  {
+    "name": "app.cadastroBasico.port",
+    "type": "java.lang.String",
+    "description": "A description for 'app.cadastroBasico.port'"
+  }
+]}

@@ -24,4 +24,24 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: "${PROTOCOLO}://${EUREKA_SERVER_URL}:${EUREKA_SERVER_PORT}/eureka"
+
+app:
+  oauth:
+    url: ${OAUTH_URL}
+    port: ${OAUTH_PORT}
+  usuario:
+    url: ${USUARIO_URL}
+    port: ${USUARIO_PORT}
+  cadastroBasico:
+    url: ${CADASTRO_BASICO_URL}
+    port: ${CADASTRO_BASICO_PORT}
+  studio:
+    url: ${STUDIO_URL}
+    port: ${STUDIO_PORT}
+  protocolo: ${PROTOCOLO}
+    
+    
+    
+    
+    

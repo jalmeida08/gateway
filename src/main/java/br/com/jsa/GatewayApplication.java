@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.gateway.route.RouteLocator;
+import org.springframework.cloud.gateway.route.builder.GatewayFilterSpec;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
@@ -51,8 +52,8 @@ public class GatewayApplication {
 						.filters( f-> f.rewritePath("/autenticacao", ""))
 						.uri(protocolo+"://"+oauthUrl+":"+oauthPort))
 				.route("usuario_route", r -> r
-						.path("/usuario/**")
-						.filters( f-> f.rewritePath("/usuario", ""))
+						.path("/user/**")
+						.filters( f-> f.rewritePath("/user", ""))
 						.uri(protocolo+"://"+usuarioUrl+":"+usuarioPort))
 				.route("cadastro_basico_route", r -> r
 					.path("/cadastro-basico/**")
@@ -68,5 +69,6 @@ public class GatewayApplication {
 						.uri(protocolo+"://"+studioUrl+":"+studioPort))
 				.build();
 	}
+
 
 }
